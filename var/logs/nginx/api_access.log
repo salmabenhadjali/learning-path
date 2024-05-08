@@ -1,2 +1,0 @@
-172.19.0.1 - - [07/May/2024:16:13:20 +0000] "GET / HTTP/1.1" 404 9464 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-172.19.0.1 - - [07/May/2024:16:13:26 +0000] "GET / HTTP/1.1" 404 9458 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
