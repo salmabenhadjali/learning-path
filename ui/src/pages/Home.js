@@ -3,7 +3,7 @@ import './Home.css';
 
 const Home = () => {
     return (
-      <main>
+      <main class="homepage">
         <p>
           Learn more about <span class="opposite">Our Genitors</span>
         </p>

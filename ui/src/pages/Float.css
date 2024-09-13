@@ -20,7 +20,7 @@
     clear: both;
 }
 
-section {
+section.float-block {
     background-color: bisque;
     border: 1px solid #333;
     padding: 1rem;
