@@ -5,16 +5,16 @@ import './Navigation.css';
 const Navigation = () => {
     return (
         <nav>
-            <h2>CSS Menu</h2>
+            <h2>CSS Menuss</h2>
             <ul>
                 <li>
                     <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/float">Float</Link>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/columns">Columns</Link>
                 </li>
             </ul>
         </nav>
