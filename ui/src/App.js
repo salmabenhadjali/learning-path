@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './pages/Home';
 import Float from './pages/Float';
 import Columns from './pages/Columns';
+import Position from './pages/Position';
 import Navigation from './components/Navigation';
 import './App.css';
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/float" element={<Float />}/>
         <Route path="/columns" element={<Columns />}/>
+        <Route path="/position" element={<Position />}/>
       </Routes>
     </Router>
   );
