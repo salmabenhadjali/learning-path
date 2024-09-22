@@ -16,6 +16,9 @@ const Navigation = () => {
                 <li>
                     <Link to="/columns">Columns</Link>
                 </li>
+                <li>
+                    <Link to="/position">Position</Link>
+                </li>
             </ul>
         </nav>
     );

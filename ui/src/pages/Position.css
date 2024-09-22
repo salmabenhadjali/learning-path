@@ -1,0 +1,67 @@
+.outer-container {
+    border: 3px dashed #000;
+    width: 75vw;
+    height: 85vw;
+    margin: 40px auto;
+}
+
+.inner-container {
+    border: 2px solid #00f;
+    width: 40vw;
+    height: 50vw;
+    margin: 200px auto;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    padding: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+}
+
+.blue { background-color: blue; }
+.red { background-color: red; }
+.green { background-color: green; }
+
+header, footer {
+    color: #fff;
+    text-align: center;
+    height: 100px;
+    
+}
+
+header {
+    position: sticky;
+    top: 0;
+    font-size: 5rem;
+}
+
+footer {
+    background-color: #000;
+    position: sticky; /* or fixed */
+    bottom: 0;
+    font-size: 3rem;
+}
+
+a:visited {
+    color: #fff;
+}
+
+.social {
+    background-color: royalblue;
+    color: #fff;
+    font-size: inherit;
+    padding: 1rem;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    z-index: 1;
+}
