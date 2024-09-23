@@ -19,6 +19,9 @@ const Navigation = () => {
                 <li>
                     <Link to="/position">Position</Link>
                 </li>
+                <li>
+                    <Link to="/flexbox">Flexbox</Link>
+                </li>
             </ul>
         </nav>
     );
