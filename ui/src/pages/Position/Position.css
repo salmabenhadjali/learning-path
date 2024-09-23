@@ -23,7 +23,7 @@ html {
     scroll-behavior: smooth;
 }
 
-section {
+.outer-container section {
     height: 100vh;
 }
 
@@ -31,20 +31,20 @@ section {
 .red { background-color: red; }
 .green { background-color: green; }
 
-header, footer {
+.outer-container header, .outer-container footer {
     color: #fff;
     text-align: center;
     height: 100px;
     
 }
 
-header {
+.outer-container header {
     position: sticky;
     top: 0;
     font-size: 5rem;
 }
 
-footer {
+.outer-container footer {
     background-color: #000;
     position: sticky; /* or fixed */
     bottom: 0;

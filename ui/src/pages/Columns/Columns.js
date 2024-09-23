@@ -3,9 +3,9 @@ import './Columns.css';
 
 const Columns = () => {
     return (
-        <div>
+        <div class="columns">
             <h1>CSS columns</h1>
-            <section class="columns">
+            <section>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis pariatur, maxime atque magni alias sapiente perspiciatis amet culpa beatae nam?</p>
                 <p>Recusandae nulla ducimus aperiam similique adipisci eum quibusdam ea magnam dolorum, sint mollitia minus, suscipit repudiandae dolor totam! Reprehenderit, nobis.</p>
                 {/* <h2>Next Topic</h2> */}

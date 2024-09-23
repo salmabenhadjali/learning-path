@@ -19,7 +19,7 @@ const Position = () => {
         //         </div>
         //     </div>
         // </div>
-        <div>
+        <div class="outer-container">
             <button class="social">Go social</button>
             <section id="one">
                 <header class="blue">Header One</header>
