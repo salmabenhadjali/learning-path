@@ -3,7 +3,7 @@ import './Flexbox.css';
 
 const Flexbox = () => {
     return (
-        <main class="container">
+        <main class="container flexbox">
             <div class="box-flex">1</div>
             <div class="box-flex">2</div>
             <div class="box-flex">3</div>
