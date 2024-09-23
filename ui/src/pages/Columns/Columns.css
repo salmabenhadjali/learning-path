@@ -29,6 +29,6 @@
     color: #333;
 }
 
-.nowrap {
+.columns section span.nowrap {
     white-space: nowrap;
 }
