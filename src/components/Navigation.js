@@ -5,7 +5,7 @@ import './Navigation.css';
 const Navigation = () => {
     return (
         <nav class="menu">
-            <h2>CSS Menuss</h2>
+            <h2>CSS Menus</h2>
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/float">Float</Link></li>

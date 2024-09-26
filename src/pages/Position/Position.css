@@ -19,10 +19,6 @@
     padding: 1rem;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .outer-container section {
     height: 100vh;
 }

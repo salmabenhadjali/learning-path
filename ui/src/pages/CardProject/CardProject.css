@@ -1,0 +1,121 @@
+.card-project {
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, #475569);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-project header,
+.card-project footer {
+    position: sticky;
+    background-color: #1E293B;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.card-project header {
+    top: 0;
+}
+
+.card-project nav {
+    background-color: whitesmoke;
+    border-bottom: 2px solid #333;
+    font-weight: bolder;
+    padding: 0.5rem;
+    color: #333;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-project nav a,
+.card-project nav a:visited {
+    color: #333;
+}
+
+.card-project nav a:focus,
+.card-project nav a:hover {
+    color: hsl(0, 0%, 20%, 0.5);
+}
+
+.card-project main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.card-project .card {
+    scroll-margin-top: 8rem;
+    width: min(100%, 350px);
+    background-color: #cbd5e1;
+    padding: 1rem;
+    border: 2px solid #000;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-project .card img {
+    border: 5px double #000;
+    border-radius: 50%;
+}
+
+.card-project .card figure {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card-project .card figcaption {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: 1rem;
+}
+
+.card-project footer {
+    bottom: 0;
+}
+
+.card-project img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-project .nowrap {
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 576px) {
+    .card-project  main {
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 1rem;
+    }
+    .card-project .card {
+        width: min(100%, 400px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card-project  nav {
+        display: none;
+    }
+    .card-project .card {
+        width: min(100%, 325px);
+    }
+
+    .card-project .card figure {
+        flex-flow: column-reverse;
+    }
+
+    .card-project .card figcaption {
+        margin: 0.1rem 0;
+    }
+
+}

@@ -1,0 +1,120 @@
+.pseudo {
+  background-color: #475569;
+  background-image: radial-gradient(whitesmoke, #475569);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pseudo header,
+.pseudo footer {
+  position: sticky;
+  background-color: #1e293b;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.pseudo header {
+  top: 0;
+}
+
+.pseudo nav {
+  background-color: whitesmoke;
+  border-bottom: 2px solid #333;
+  font-weight: bolder;
+  padding: 0.5rem;
+  color: #333;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pseudo nav a,
+.pseudo nav a:visited {
+  color: #333;
+}
+
+.pseudo nav a:focus,
+.pseudo nav a:hover {
+  color: hsl(0, 0%, 20%, 0.5);
+}
+
+.pseudo main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.pseudo .card {
+  scroll-margin-top: 8rem;
+  width: min(100%, 350px);
+  background-color: #cbd5e1;
+  padding: 1rem;
+  border: 2px solid #000;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pseudo .card img {
+  border: 5px double #000;
+  border-radius: 50%;
+}
+
+.pseudo .card figure {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.pseudo .card figcaption {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+  margin: 1rem;
+}
+
+.pseudo footer {
+  bottom: 0;
+}
+
+.pseudo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.pseudo .nowrap {
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 576px) {
+  .pseudo main {
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 1rem;
+  }
+  .pseudo .card {
+    width: min(100%, 400px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pseudo nav {
+    display: none;
+  }
+  .pseudo .card {
+    width: min(100%, 325px);
+  }
+
+  .pseudo .card figure {
+    flex-flow: column-reverse;
+  }
+
+  .pseudo .card figcaption {
+    margin: 0.1rem 0;
+  }
+}
