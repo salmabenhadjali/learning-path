@@ -12,4 +12,15 @@ body {
   min-height: 100vh;
   font-family: 'Nunito', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Image Reset */
+/* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
 /* Reset end */
