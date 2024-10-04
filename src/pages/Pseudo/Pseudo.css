@@ -6,8 +6,7 @@
   height: 100%;
 }
 
-.pseudo header,
-.pseudo footer {
+.pseudo :where(header, footer) {
   position: sticky;
   background-color: #1e293b;
   color: whitesmoke;
@@ -28,14 +27,16 @@
   justify-content: space-evenly;
 }
 
-.pseudo nav a,
-.pseudo nav a:visited {
+.pseudo nav :is(a:link, a:visited) {
   color: #333;
 }
 
-.pseudo nav a:focus,
-.pseudo nav a:hover {
+.pseudo nav :is(a:focus, a:hover) {
   color: hsl(0, 0%, 20%, 0.5);
+}
+
+.pseudo nav a:active {
+  color: red;
 }
 
 .pseudo main {
@@ -65,6 +66,14 @@
   border-radius: 50%;
 }
 
+.pseudo .card img:not([alt]) {
+  border: 5px solid red;
+}
+
+.pseudo .card:nth-child(odd) {
+  background-color: papayawhip;
+}
+
 .pseudo .card figure {
   display: flex;
   flex-flow: column nowrap;
@@ -75,6 +84,35 @@
   font-weight: bolder;
   text-align: center;
   margin: 1rem;
+}
+
+.pseudo .card figcaption::after {
+  content: " ✨";
+  display: block;
+}
+
+.pseudo .card figcaption::first-letter {
+  font-size: 3rem;
+}
+
+.pseudo .card p {
+  position: relative;
+}
+
+.pseudo .card p::before {
+  content: open-quote;
+  font-size: 3em;
+  position: absolute;
+  top: -0.25em;
+  left: -0.5em;
+}
+
+.pseudo .card p::after {
+  content: close-quote;
+  font-size: 3em;
+  position: absolute;
+  top: -0.25em;
+  right: -0.5em;
 }
 
 .pseudo footer {
