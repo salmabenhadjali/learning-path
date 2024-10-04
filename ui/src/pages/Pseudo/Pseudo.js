@@ -19,21 +19,21 @@ const Pseudo = () => {
                         <img src={`${process.env.PUBLIC_URL}/assets/profile1-500x500.png`} alt="Joe Coder" height="500" width="500"/>
                         <figcaption>Joe Coder</figcaption>
                     </figure>
-                    <p><q>I code Staff</q></p>
+                    <p>I code Staff</p>
                 </article>
                 <article id="profile2" class="card">
                     <figure>
-                        <img src={`${process.env.PUBLIC_URL}/assets/profile2-500x500.png`} height="500" width="500"/>
+                        <img src={`${process.env.PUBLIC_URL}/assets/profile2-500x500.png`} alt="Matt Designer" height="500" width="500"/>
                         <figcaption>Matt Designer</figcaption>
                     </figure>
-                    <p><q>I design Staff</q></p>
+                    <p>I design Staff</p>
                 </article>
                 <article id="profile3" class="card">
                     <figure>
                         <img src={`${process.env.PUBLIC_URL}/assets/profile3-500x500.png`} alt="Jane Dev Rel" height="500" width="500"/>
                         <figcaption>Jane <span className="nowrap">Dev Rel</span></figcaption>
                     </figure>
-                    <p><q>I teach Staff</q></p>
+                    <p>I teach Staff</p>
                 </article>
             </main>
 
