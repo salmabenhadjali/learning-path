@@ -12,7 +12,8 @@
 :root {
   /* FONT */
   --FF: 'Nunito', sans-serif;
-  --FS: 1rem;
+  --FS: clamp(1.75rem, 3vh, 2.25rem);
+  --FS-SM: clamp(1.25rem, 2vh, 1.5rem);
   --FS-XL: 3rem;
 
   /* COLORS */
@@ -27,12 +28,12 @@
   --SQUARE-SIZE: max(150px, 20vw);
 
   /* GENERAL  */
-  --PADDING: 0.5rem;
+  --PADDING: 0.5em;
   --SHADOWS: 0 6px 5px -5px var(--DARK-COLOR);
   --BORDERS: 2px solid var(--DARK-COLOR);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     /* COLORS */
     --BGCOLOR: #000;
