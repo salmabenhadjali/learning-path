@@ -10,7 +10,7 @@ const Functions = () => {
             </header>
 
             <main>
-                <section>
+                {/* <section>
                     <h2>My heading</h2>
                     <p className="content">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias perferendis 
@@ -28,7 +28,20 @@ const Functions = () => {
                         cum tenetur illum, quod voluptate dolor vero? Porro explicabo soluta pariatur 
                         veritatis ullam distinctio adipisci, qui minus voluptate inventore!
                     </p>
-                </aside>
+                </aside> */}
+                
+                <div className="square"><p>Hey</p></div>
+                <div className="square">💻</div>
+                <div className="square">💻</div>
+                <div className="square">💻</div>
+                <div className="square">💻</div>
+                <div className="square">💻</div>
+                <div className="square">💻</div>
+                <div className="square square--highlight">💻</div>
+                <div className="square">💻</div>
+                <div className="square">💻</div>
+                <div className="square">💻</div>
+                <div className="square">💻</div>
             </main>
 
              <footer>
