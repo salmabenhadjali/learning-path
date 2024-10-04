@@ -35,16 +35,13 @@
 
 .functions main {
   flex-grow: 1;
-
-  /* padding: 10px 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: min(4vw, 15px); */
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
+  padding: var(--PADDING);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 300px));
+  gap: min(2vw, 20px);
+  /* display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start; */
 }
 
 .functions main section {
@@ -83,7 +80,7 @@
   bottom: 0;
 }
 
-a:any-link {
+.functions a:any-link {
   color: firebrick;
 }
 
@@ -98,8 +95,8 @@ a:any-link {
 
 .functions .square {
   background-color: var(--SQUARE-BGCOLOR);
-  width: var(--SQUARE-SIZE);
-  height: var(--SQUARE-SIZE);
+  /* width: var(--SQUARE-SIZE);
+    height: var(--SQUARE-SIZE); */
   border: var(--BORDERS);
   border-radius: 15px;
   display: grid;

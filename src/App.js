@@ -13,6 +13,7 @@ import Pseudo from './pages/Pseudo/Pseudo';
 import Variables from './pages/Variables/Variables';
 import Functions from './pages/Functions/Functions';
 import Animations from './pages/Animations/Animations';
+import Products from './pages/Animations/Products';
 import Organization from './pages/Organization/Organization';
 import Navigation from './components/Navigation';
 import './App.css';
@@ -34,8 +35,9 @@ function App() {
         <Route path="/pseudo" element={<Pseudo />}/>
         <Route path="/variables" element={<Variables />}/>
         <Route path="/functions" element={<Functions />}/>
-        <Route path="/Animations" element={<Animations />}/>
-        <Route path="/Organization" element={<Organization />}/>
+        <Route path="/animations" element={<Animations />}/>
+        <Route path="/organizations" element={<Organization />}/>
+        <Route path="/products" element={<Products />}/>
       </Routes>
     </Router>
   );

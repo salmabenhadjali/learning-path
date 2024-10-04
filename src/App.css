@@ -12,8 +12,8 @@
 :root {
   /* FONT */
   --FF: 'Nunito', sans-serif;
-  --FS: clamp(1.75rem, 3vh, 2.25rem);
-  --FS-SM: clamp(1.25rem, 2vh, 1.5rem);
+  --FS: 1.5rem;
+  --FS-SM: clamp(0.5rem, 2vh, 1rem);
   --FS-XL: 3rem;
 
   /* COLORS */
@@ -26,6 +26,10 @@
   /* SQUARE */
   --SQUARE-BGCOLOR: papayawhip;
   --SQUARE-SIZE: max(150px, 20vw);
+
+  /* MENU HEADER */
+  --HEADER-BGCOLOR: #333;
+  --HEADER-COLOR: whitesmoke;
 
   /* GENERAL  */
   --PADDING: 0.5em;
