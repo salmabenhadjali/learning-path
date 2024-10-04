@@ -80,7 +80,7 @@
     bottom: 0;
 }
 
-a:any-link {
+.functions a:any-link {
     color: firebrick;
 }
 
