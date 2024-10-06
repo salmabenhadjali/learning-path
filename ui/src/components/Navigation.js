@@ -20,7 +20,7 @@ const Navigation = () => {
                 <li><Link to="/variables">Variables</Link></li>
                 <li><Link to="/functions">Functions</Link></li>
                 <li><Link to="/animations">Animations</Link></li>
-                <li><Link to="/organizations">Organizations</Link></li>
+                <li><Link to="/organization">Organization</Link></li>
             </ul>
         </nav>
     );

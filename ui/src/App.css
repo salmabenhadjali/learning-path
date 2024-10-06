@@ -1,14 +1,21 @@
 /* Reset start */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+/* || RESET */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-/* Reset end */
 
-/* Variables start */
+/* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+
+/* || VARIABLES */
 :root {
   /* FONT */
   --FF: 'Nunito', sans-serif;
@@ -46,9 +53,8 @@
     --SQUARE-BGCOLOR: hsl(300, 100%, 25%, 0.6);
   }
 }
-/* Variables end */
 
-/* General styles start */
+/* || GENERAL STYLES */
 body {
   margin: 0.5rem;
   min-height: 100vh;
@@ -58,12 +64,3 @@ body {
 html {
   scroll-behavior: smooth;
 }
-/* General styles end */
-
-/* Image Reset start */
-/* img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-} */
- /* Image Reset end */
