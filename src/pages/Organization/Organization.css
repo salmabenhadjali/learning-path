@@ -1,0 +1,33 @@
+/* || RESET */
+button {
+  font: inherit;
+}
+
+/* || BLOKS */
+.organization header {
+  background-color: var(--HEADER-BGCOLOR);
+  color: var(--HEADER-COLOR);
+  padding: 1rem 1rem 0.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* || ELEMENTS */
+.header__btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+}
+
+/* || MODIFIERS */
+.header__btn--secondary {
+  background-color: yellow;
+}
+
+.header__btn--border-lg {
+  border: 5px solid whitesmoke;
+}

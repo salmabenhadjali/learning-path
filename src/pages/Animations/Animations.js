@@ -26,9 +26,6 @@ const Animations = () => {
                         <li><Link to="#">Forum</Link></li> 
                         <li><Link to="#">About</Link></li> 
                         <li><Link to="#">Contact</Link></li> 
-                        {/* <li><a href="#"></a>Forum</li> 
-                        <li><a href="#"></a>About</li> 
-                        <li><a href="#"></a>Contact</li>  */}
                     </ul>
                 </nav>
             </header>
