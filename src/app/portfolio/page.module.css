@@ -1,0 +1,49 @@
+.mainTitle {
+    font-size: 5rem;
+}
+
+.container {
+    
+}
+
+.selectTitle {
+    margin: 20px 0;
+}
+
+.items {
+    display: flex;
+    gap: 3rem;
+}
+
+.item {
+    border: 5px solid #bbb;
+    border-radius: 5px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    background-size: cover !important;
+}
+
+.item:nth-child(1) {
+    background: url("/illustration.png");
+}
+
+.item:nth-child(2) {
+    background: url("/websites.jpg");
+}
+
+.item:nth-child(3) {
+    background: url("/apps.jpg");
+}
+
+.item:hover .itemTitle {
+    color: #53c28b;
+}
+
+.itemTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}

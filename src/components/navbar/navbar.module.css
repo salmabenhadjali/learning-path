@@ -1,31 +1,33 @@
 .container {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 1.4rem;
-
+  font-weight: bold;
+  font-size: 1.4rem;
 }
 
 .links {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .link {
+}
 
+.link:active {
+  color: #53c28b;
 }
 
 .logout {
-    padding: 5px;
-    border: none;
-    border-radius: 2px;
-    background-color: #53c28b;
-    color: white;
-    cursor: pointer;
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+  background-color: #53c28b;
+  color: white;
+  cursor: pointer;
 }
