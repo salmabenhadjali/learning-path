@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Nunito } from "next/font/google"
+import { Nunito } from "next/font/google";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 
 const nunito = Nunito({
-  subsets: ["latin"], 
-  weight: ["400", "900"]
-})
+  subsets: ["latin"],
+  weight: ["400", "900"],
+});
 
 export const metadata: Metadata = {
   title: "Nextfolio",
@@ -22,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <div className="container">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
