@@ -1,5 +1,5 @@
-export default function Login() {
+export default function Settings() {
   return (
-    <div>Login page</div>
+    <div>Settings page</div>
   );
 }

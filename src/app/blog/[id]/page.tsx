@@ -1,5 +1,5 @@
-export default function Category() {
+export default function BlogPost() {
   return (
-    <div>Category</div>
+    <div>BlogPost</div>
   );
 }
