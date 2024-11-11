@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Inter, Nunito } from "next/font/google"
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -12,6 +15,8 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+const nunito = Inter({subsets: ["latin"]})
 
 export const metadata: Metadata = {
   title: "Nextfolio",
@@ -25,8 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={nunito.className}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
