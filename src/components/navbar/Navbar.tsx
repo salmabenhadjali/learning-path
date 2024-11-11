@@ -3,6 +3,7 @@ import Link from "next/link";
 import { menuItems } from "@/data/menuItems";
 import styles from "./navbar.module.css";
 
+
 const Navbar = () => {
   const logout = () => {
     console.log("logged out !");
@@ -18,7 +19,9 @@ const Navbar = () => {
             {item.title}
           </Link>
         ))}
-        <button className={styles.logout} onClick={logout}>Logout</button>
+        <button className={styles.logout} onClick={logout}>
+          Logout
+        </button>
       </div>
     </div>
   );

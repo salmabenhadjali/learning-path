@@ -21,6 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <link rel="icon" href="/logo.png" />
+        <link rel="apple-touch-icon" href="/logo.png" />
+        <meta name="description" content="My Nextfolio website" />
+      </head>
       <body className={nunito.className}>
         <div className="container">
           <Navbar />

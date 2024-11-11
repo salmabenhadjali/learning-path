@@ -12,7 +12,7 @@ export const menuItems = [
     },
     {
         id: 3,
-        title: "blog",
+        title: "Blog",
         url: "/blog"
     },
     {
