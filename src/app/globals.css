@@ -8,14 +8,26 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: #111;
-  color: #bbb;
   font-size: 1rem;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.theme {
+  transition: 1s all ease;
+}
+
+.light {
+  background-color: white;
+  color: #111;
+}
+
+.dark {
+  background-color: #111;
+  color: #bbb;
 }
 
 .container {
@@ -29,3 +41,6 @@ a {
 }
 
 /* Add global variables */
+:root {
+  --COLOR-GREEN: #53c28b;
+}
