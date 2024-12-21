@@ -1,7 +1,5 @@
-import Button from "@/components/Button/Button";
 import styles from "./page.module.css";
 import Image from "next/image";
-import { FC } from "react";
 import Link from "next/link";
 
 async function getData() {

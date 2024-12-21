@@ -16,7 +16,8 @@ async function getData(id: string) {
 }
 
 const BlogPost: FC<{ params: { id: string } }> = async ({ params }) => {
-  const data = await getData(params.id);
+  const { id } = await params;
+  const data = await getData(id);
   return (
     <div className={styles.container}>
       <div className={styles.top}>
