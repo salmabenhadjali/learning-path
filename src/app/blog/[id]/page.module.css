@@ -38,7 +38,7 @@
 }
 .username {
   font-weight: bolder;
-  color: #53c28b;
+  color: var(--COLOR-GREEN);
 }
 
 .imgContainer {

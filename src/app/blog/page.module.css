@@ -2,7 +2,7 @@
 }
 
 .categoryTitle {
-  color: #53c28b;
+  color: var(--COLOR-GREEN);
 }
 
 .items {

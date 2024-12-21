@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { menuItems } from "@/data/menuItems";
 import styles from "./navbar.module.css";
-
+import DarkModeToogle from "../DarkModeToogle/DarkModeToogle";
 
 const Navbar = () => {
   const logout = () => {
@@ -14,6 +14,7 @@ const Navbar = () => {
         NextFolio
       </Link>
       <div className={styles.links}>
+        <DarkModeToogle />
         {menuItems.map((item) => (
           <Link key={item.id} href={item.url} className={styles.link}>
             {item.title}

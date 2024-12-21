@@ -1,9 +1,9 @@
 .container {
-    padding: 20px;
-    width: max-content;
-    color: white;
-    cursor: pointer;
-    background-color: #53c28b;
-    border: none;
-    border-radius: 5px;
+  padding: 20px;
+  width: max-content;
+  color: white;
+  cursor: pointer;
+  background-color: var(--COLOR-GREEN);
+  border: none;
+  border-radius: 5px;
 }

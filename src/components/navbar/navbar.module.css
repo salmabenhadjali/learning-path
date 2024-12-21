@@ -20,14 +20,14 @@
 }
 
 .link:active {
-  color: #53c28b;
+  color: var(--COLOR-GREEN);
 }
 
 .logout {
   padding: 5px;
   border: none;
   border-radius: 2px;
-  background-color: #53c28b;
+  background-color: var(--COLOR-GREEN);
   color: white;
   cursor: pointer;
 }
