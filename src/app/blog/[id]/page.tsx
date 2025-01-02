@@ -4,7 +4,7 @@ import { FC } from "react";
 import { notFound } from "next/navigation";
 
 async function getData(id: string) {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+  const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
     cache: "no-store", //default caching in Version 15+
     // cache: "force-cache", //default caching in Version 13
     // next: { revalidate: 10 }, //Change lifetime is 10s
@@ -22,10 +22,8 @@ const BlogPost: FC<{ params: { id: string } }> = async ({ params }) => {
     <div className={styles.container}>
       <div className={styles.top}>
         <div className={styles.info}>
-          <h1 className={styles.title}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit
-          </h1>
-          <p className={styles.desription}>{data.body}</p>
+          <h1 className={styles.title}>{data.title}</h1>
+          <p className={styles.desription}>{data.desc}</p>
           <div className={styles.author}>
             <Image
               src="https://images.pexels.com/photos/3130810/pexels-photo-3130810.jpeg"
@@ -38,21 +36,11 @@ const BlogPost: FC<{ params: { id: string } }> = async ({ params }) => {
           </div>
         </div>
         <div className={styles.imgContainer}>
-          <Image
-            src="https://images.pexels.com/photos/3130810/pexels-photo-3130810.jpeg"
-            alt=""
-            fill={true}
-            className={styles.image}
-          />
+          <Image src={data.img} alt="" fill={true} className={styles.image} />
         </div>
       </div>
       <div className={styles.content}>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Perspiciatis, quia, ad iste culpa, eius accusamus obcaecati tempore
-          aliquam facilis id ipsam doloremque impedit. Perferendis fugiat
-          repellendus dolor nihil enim maxime!
-        </p>
+        <p>{data.content}</p>
       </div>
     </div>
   );
