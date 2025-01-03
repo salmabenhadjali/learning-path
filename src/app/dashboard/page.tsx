@@ -4,8 +4,18 @@ import { useEffect, useState } from "react";
 import styles from "./page.module.css";
 import useSWR from "swr";
 import { useQuery } from "@tanstack/react-query";
+import { useSession } from "next-auth/react";
 
 export default function Dashboard() {
+  const session = useSession();
+  console.log(session);
+
+  if (session?.user?.role === "admin") {
+    return <p>You are an admin, welcome!</p>;
+  }
+
+  return <p>You are not authorized to view this page!</p>;
+
   // option 1
   // fetch data on client side using useEffet
   // not the best way
