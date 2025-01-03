@@ -7,7 +7,6 @@ export const GET = async (request: NextResponse) => {
     //fetch data
     await connect();
     const posts = await Post.find();
-    console.log(posts);
     return new NextResponse(JSON.stringify(posts), { status: 200 });
   } catch (err) {
     return new NextResponse("Database connection error", { status: 500 });
