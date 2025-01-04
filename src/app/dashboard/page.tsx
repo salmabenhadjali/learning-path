@@ -14,6 +14,10 @@ export default function Dashboard() {
     return <p>You are an admin, welcome!</p>;
   }
 
+  if (session?.status === "authenticated") {
+    return <p>You are authorized to view this page!</p>;
+  }
+
   return <p>You are not authorized to view this page!</p>;
 
   // option 1

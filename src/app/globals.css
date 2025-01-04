@@ -27,7 +27,7 @@ a {
 
 .dark {
   background-color: #111;
-  color: #bbb;
+  color: var(--COLOR-GRAY);
 }
 
 .container {
@@ -43,4 +43,5 @@ a {
 /* Add global variables */
 :root {
   --COLOR-GREEN: #53c28b;
+  --COLOR-GRAY: #bbb;
 }

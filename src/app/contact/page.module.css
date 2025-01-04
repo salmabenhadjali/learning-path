@@ -1,50 +1,50 @@
 .title {
-    font-size: 3rem;
-    margin-bottom: 100px;
-    text-align: center;
+  font-size: 3rem;
+  margin-bottom: 100px;
+  text-align: center;
 }
 
 .content {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
 }
 
 .imgContainer {
-    flex: 1;
-    height: 500px;
-    position: relative;
+  flex: 1;
+  height: 500px;
+  position: relative;
 }
 
 .img {
-    object-fit: contain;
-    /* animation: shake 3s infinite ease alternate; */
+  object-fit: contain;
+  /* animation: shake 3s infinite ease alternate; */
 }
 
 @keyframes shake {
-    from {
-        transform: translateY(-15px);
-    }
-    to {
-        transform: translateY(0px) scale(1.03);
-    }
+  from {
+    transform: translateY(-15px);
+  }
+  to {
+    transform: translateY(0px) scale(1.03);
+  }
 }
 
 .form {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1.125rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
 }
 
 .input,
 .textarea {
-    padding: 20px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: #bbb;
-    border: 3px solid #bbb;
-    font-size: 1rem;
-    font-weight: bold;
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--COLOR-GRAY);
+  border: 3px solid var(--COLOR-GRAY);
+  font-size: 1rem;
+  font-weight: bold;
 }

@@ -1,19 +1,18 @@
 import { NextResponse } from "next/server";
 import connect from "@/utils/db";
-import Post from "@/models/Post";
-import { Params } from "next/dist/server/request/params";
+import bcrypt from "bcryptjs";
+import User from "@/models/User";
 
-export const GET = async (
-  request: NextResponse,
-  { params }: { params: Params }
-) => {
-  const { id } = await params;
+export const POST = async (request: NextResponse) => {
+  const { name, email, password } = await request.json();
+  await connect();
+  const hashedPassword = await bcrypt.hash(password, 5);
+  const newUser = new User({ name, email, password: hashedPassword });
   try {
-    //fetch data
-    await connect();
-    const post = await Post.findById(id);
-    return new NextResponse(JSON.stringify(post), { status: 200 });
-  } catch (err) {
-    return new NextResponse("Database connection error", { status: 500 });
+    //save data
+    await newUser.save();
+    return new NextResponse("User has been created.", { status: 201 });
+  } catch (error) {
+    return new NextResponse(error.message, { status: 500 });
   }
 };
