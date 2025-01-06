@@ -17,3 +17,19 @@ export const GET = async (
     return new NextResponse("Database connection error", { status: 500 });
   }
 };
+
+export const DELETE = async (
+  request: NextResponse,
+  { params }: { params: Params }
+) => {
+  const { id } = await params;
+
+  try {
+    await connect();
+    //fetch data
+    await Post.findByIdAndDelete(id);
+    return new NextResponse("Post has been deleted", { status: 201 });
+  } catch (err) {
+    return new NextResponse(err.message, { status: 500 });
+  }
+};

@@ -11,13 +11,13 @@ const nextConfig: NextConfig = {
       // Pattern for HTTP
       {
         protocol: 'http',
-        hostname: 'images.pexels.com',
+        hostname: '*',
         pathname: '/**', // Allows any path
       },
       // Pattern for HTTPS
       {
         protocol: 'https',
-        hostname: 'images.pexels.com',
+        hostname: '*',
         pathname: '/**', // Allows any path
       },
     ],

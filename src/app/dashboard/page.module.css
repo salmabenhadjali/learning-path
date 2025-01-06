@@ -16,7 +16,7 @@
 
 .imgContainer {
   width: 200px;
-  height: 100px;
+  height: auto;
   position: relative;
 }
 
