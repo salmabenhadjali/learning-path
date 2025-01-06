@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 export default function Register() {
   const [error, setError] = useState(false);
   const router = useRouter();
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const name = e.target[0].value;
     const email = e.target[1].value;
