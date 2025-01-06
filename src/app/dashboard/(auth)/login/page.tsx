@@ -1,10 +1,14 @@
 "use client";
 
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import styles from "./page.module.css";
 import { FormEvent } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Login() {
+  const session = useSession();
+  const router = useRouter();
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("submit");
@@ -20,6 +24,14 @@ export default function Login() {
       throw Error("wrong credentials !");
     }
   };
+
+  if (session?.status === "loading") {
+    return <p>Loading ...</p>;
+  }
+
+  if (session?.status === "authenticated") {
+    router?.push("/dashboard");
+  }
 
   return (
     <div className={styles.container}>

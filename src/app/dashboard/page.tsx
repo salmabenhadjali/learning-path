@@ -5,20 +5,11 @@ import styles from "./page.module.css";
 import useSWR from "swr";
 import { useQuery } from "@tanstack/react-query";
 import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 export default function Dashboard() {
   const session = useSession();
-  console.log(session);
-
-  if (session?.user?.role === "admin") {
-    return <p>You are an admin, welcome!</p>;
-  }
-
-  if (session?.status === "authenticated") {
-    return <p>You are authorized to view this page!</p>;
-  }
-
-  return <p>You are not authorized to view this page!</p>;
+  const router = useRouter();
 
   // option 1
   // fetch data on client side using useEffet
@@ -78,13 +69,16 @@ export default function Dashboard() {
   //   queryFn: getData,
   // });
 
-  if (isLoading) {
-    return <div>Loading...</div>;
+  if (session.status === "loading") {
+    // add singleton
+    return <p>Loading...</p>;
   }
 
-  if (error instanceof Error) {
-    return <div>Error: {error.message}</div>;
+  if (session.status === "unauthenticated") {
+    router?.push("/dashboard/login");
   }
 
-  return <div className={styles.container}>Dashboard</div>;
+  if (session?.status === "authenticated") {
+    return <div className={styles.container}>Dashboard</div>;
+  }
 }
