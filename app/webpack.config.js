@@ -56,6 +56,12 @@ Encore
         config.corejs = '3.38';
     })
 
+    // enables polling 
+    .configureWatchOptions(function (watchOptions) {
+        watchOptions.poll = 1000; // Check for changes every 1 second
+        watchOptions.ignored = /node_modules/; // Ignore unnecessary files
+    })
+
     // enables Sass/SCSS support
     //.enableSassLoader()
 
