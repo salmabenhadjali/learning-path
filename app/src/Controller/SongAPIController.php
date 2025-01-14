@@ -12,7 +12,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class SongAPIController extends AbstractController
 {
-    #[Route('/api/song/{id<\d+>}', methods: ['GET'])]
+    #[Route('/api/song/{id<\d+>}', methods: ['GET'], name: 'api_songs_get')]
     public function getSong(int $id, LoggerInterface $logger): Response
     {
         //TODO query the database
