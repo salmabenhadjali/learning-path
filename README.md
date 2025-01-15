@@ -1,3 +1,7 @@
+**Source:** [Learning Tutorial](https://symfonycasts.com/screencast/symfony6)
+
+---
+
 # Salma's Coding Adventure 🚀🌍
 
 Welcome to **Salma's Learning Odyssey**! 🌌 This repository is where I document, share, and sometimes laugh (or cry) at my coding adventures as I dive deeper into the vast realms of programming and tech. Buckle up, because we're in for a ride! 🎢
@@ -28,11 +32,20 @@ To switch topics, just checkout a different branch and explore along with me.
 - Chapter 3: "Framework Frenzy" – Exploring new frameworks and understanding how each one builds on the last.
 - Chapter 4 and beyond... Stay tuned. 🚀
 
-<!-- ## 🌟 What I Learned
+## 🌟 What I Relearned
 
-This project has been an incredible journey into the world of CSS. Here are the key lessons and concepts I explored:
+While working on this project, I had the opportunity to revisit and reinforce key concepts, including:
 
--  -->
+- **Symfony Fundamentals**: Revisited the foundations of Symfony, including routing, controllers, and the request/response cycle.
+- **Twig Templating**: Refreshed my knowledge of using Twig to create dynamic, reusable views with clean templates.
+- **The bin/console Tool**: Strengthened my understanding of the `bin/console` tool for managing commands and debugging efficiently.
+- **Services and Dependency Injection**: Revisited Symfony’s powerful service container and dependency injection concepts for writing maintainable code.
+- **Debugging with the Web Debug Toolbar**: Rediscovered the power of Symfony’s web debug toolbar for efficient problem-solving during development.
+- **Symfony Flex**: Relearned how Flex simplifies dependency installation and configuration through its recipe system.
+- **JavaScript & Assets**: Refreshed my skills in integrating JavaScript and managing assets using Symfony Encore and UX.
+- **JSON API Endpoints**: Revisited the process of creating JSON API endpoints and calling them via Ajax for dynamic applications.
+
+Revisiting these concepts not only reinforced my technical expertise but also deepened my appreciation for Symfony’s flexibility and developer-friendly ecosystem. It was a valuable journey of rediscovery and mastery.
 
 ## 🤓 Follow Along
 
