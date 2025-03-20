@@ -1,0 +1,29 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+
+    "lint": "eslint --ext .js,.vue src",
+  "lint:fix": "eslint --ext .js,.vue src --fix",
+  "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue2": "^2.3.3",
+    "vite": "^4.0.0",
+    "vite-plugin-vue2": "^2.0.3",
+    "vue": "^2.7.16",
+    "vue-template-compiler": "^2.7.16"
+  },
+  "devDependencies": {
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-vue": "^10.0.0",
+    "prettier": "^3.5.3"
+  }
+}
