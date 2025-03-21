@@ -19,6 +19,16 @@
 
     <input type="text" v-model="name">
     <p>{{ name }}</p>
+
+    <div class="demo" @click="attachedRed = !attachedRed" :class="{red: attachedRed}"></div>
+    <div class="demo" @click="attachedRed = !attachedRed" :class="[color, {red: attachedRed}]"></div>
+    <div class="demo" @click="attachedRed = !attachedRed" :class="divClasses"></div>
+    <div class="demo" @click="attachedRed = !attachedRed" :style="{backgroundColor: color}"></div>
+    <div class="demo" @click="attachedRed = !attachedRed" :style="myStyle"></div>
+    <div class="demo" @click="attachedRed = !attachedRed" :style="[myStyle, {height: width + 'px'}]"></div>
+    <br>
+    <input type="text" v-model="color">
+    <input type="text" v-model="width">
   </div>
 </template>
 
@@ -35,7 +45,10 @@
         secondCounter: 0,
         x: 0,
         y: 0,
-        name: 'Max'
+        name: 'Max',
+        attachedRed: false,
+        color: 'green',
+        width: 100
       }
     },
     // Dependent properties
@@ -44,6 +57,20 @@
       output() {
         console.log('Computed')
         return this.counter > 5 ? 'Greater than 5' : 'Smaller than 5'
+      },
+
+      divClasses() {
+        return {
+          red: !this.attachedRed,
+          blue: this.attachedRed
+        }
+      },
+
+      myStyle() {
+        return {
+          backgroundColor: this.color,
+          width: this.width + 'px'
+        }
       }
     },
     // Execute code upon data changes
@@ -83,9 +110,29 @@
   }
 </script>
 
-<style>
+<style scoped>
   h1 {
     color: #42b883;
+  }
+
+  .demo {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .red {
+    background-color: red;
+  }
+
+  .blue {
+    background-color: blue;
+  }
+
+  .green {
+    background-color: green;
   }
 </style>
   
