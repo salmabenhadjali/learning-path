@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "module": "ESNext",
+      "moduleResolution": "Bundler",
+      "target": "ES2020",
+      "allowJs": true,
+      "strictNullChecks": true,
+      "strictFunctionTypes": true,
+      "jsx": "preserve",
+      "esModuleInterop": true
+    },
+    "include": [
+      "src/**/*.js",
+      "src/**/*.vue"
+    ],
+    "exclude": [
+      "node_modules",
+      "**/node_modules/*"
+    ]
+  }
+  
