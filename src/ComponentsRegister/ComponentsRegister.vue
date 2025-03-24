@@ -1,6 +1,6 @@
 <template>
   <div>
-    <my-component v-for="component in 5"></my-component>
+    <my-component v-for="component in 5" @key="component"></my-component>
   </div>
 </template>
 
