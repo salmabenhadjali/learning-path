@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router'
 // import MyComponent from './ComponentsRegister/MyComponent.vue'
 
 // define globally a component
@@ -15,5 +16,6 @@ export const eventBus = new Vue({
 })
 
 new Vue({
+  router,
   render: f => f(App),
 }).$mount('#app')
