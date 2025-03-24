@@ -1,9 +1,10 @@
 import Vue from 'vue'
-import App from './App/App.vue'
-import Conditionals from './Conditionals/Conditionals.vue'
-import Game from './Game/Game.vue'
-import Lifecycle from './Lifecycle/Lifecycle.vue'
+import App from './App.vue'
+import MyComponent from './ComponentsRegister/MyComponent.vue'
+
+// define globally a component
+// Vue.component('my-component', MyComponent)
 
 new Vue({
-  render: h => h(Lifecycle),
+  render: f => f(App),
 }).$mount('#app')
