@@ -7,12 +7,14 @@
     <template v-if="show">
       <h1>Ingredienst</h1>
       <ul>
-        <li v-for="(ingredient, index) in ingredients" :key="index">{{ index + 1 }}/ {{ ingredient }}</li>
+        <li v-for="(ingredient, index) in ingredients" :key="index">
+          {{ index + 1 }}/ {{ ingredient }}
+        </li>
       </ul>
 
-      <h1>Persons </h1>
+      <h1>Persons</h1>
       <template v-for="(person, index) in persons">
-        <div v-for="(value, key, i) in person" :key="i">
+        <div v-for="(value, key, i) in person" :key="'' + index + i">
           {{ key }} : {{ value }}
         </div>
       </template>
@@ -20,29 +22,26 @@
     <p v-show="show">Do you also see me ?</p>
     <button @click="show = !show">Switch</button>
 
-    <span v-for="n in 10">{{ n }}</span>
+    <span v-for="n in 10" :key="'i' + n">{{ n }}</span>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'Conditionals',
-    // Store data to be used
-    data() {
-      return {
-        title : 'Conditionals! 🚀',
-        show: true,
-        ingredients: ['meat', 'fruit', 'cookies'],
-        persons: [
-          {name: 'Max', age: 27, color: 'red'},
-          {name: 'Anna', age: 'unknown', color: 'blue'}
-        ]
-      }
+export default {
+  name: 'Conditionals',
+  // Store data to be used
+  data() {
+    return {
+      title: 'Conditionals! 🚀',
+      show: true,
+      ingredients: ['meat', 'fruit', 'cookies'],
+      persons: [
+        { name: 'Max', age: 27, color: 'red' },
+        { name: 'Anna', age: 'unknown', color: 'blue' },
+      ],
     }
-  }
+  },
+}
 </script>
 
-<style scoped>
-
-</style>
-  
+<style scoped></style>

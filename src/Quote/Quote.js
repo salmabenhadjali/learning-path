@@ -3,4 +3,10 @@ export default {
   props: {
     quote: String,
   },
+  activated() {
+    console.log('activated !')
+  },
+  deactivated() {
+    console.log('deactivated !')
+  },
 }

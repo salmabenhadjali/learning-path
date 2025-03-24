@@ -1,45 +1,48 @@
 <template>
   <div class="container">
-    <!-- <app-init></app-init>
-    <connditionals></connditionals>
-    <app-lifecycle></app-lifecycle>
-    <app-game></app-game>
-    <app-componennets-register></app-componennets-register>
-    <my-component></my-component> -->
+    <button @click="selectedComponent = 'appGame'">Game</button>
+    <button @click="selectedComponent = 'app-init'">Init</button>
+    <button @click="selectedComponent = 'Conditionals'">Conditionals</button>
+    <button @click="selectedComponent = 'app-lifecycle'">Lifecycle</button>
+    <button @click="selectedComponent = 'app-components-register'">
+      Components Register
+    </button>
+    <button @click="selectedComponent = 'appUser'">App User</button>
+    <button @click="selectedComponent = 'app-quote'">Quoter</button>
     <div class="row">
       <div class="col-xs-2">
-        <!-- <app-user></app-user> -->
-        <app-quote>
-          <!-- named slot -->
-          <h1 slot="title">The quote</h1>
-          <p slot="content">A wonderful quote!</p>
-          <!-- unnamed slot -->
-          <p>Unnamed slot!</p>
-        </app-quote>
+        <keep-alive>
+          <component :is="selectedComponent"></component>
+        </keep-alive>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// import Start from './Start/Start.vue'
-// import Conditionals from './Conditionals/Conditionals.vue'
-// import Game from './Game/Game.vue'
-// import Lifecycle from './Lifecycle/Lifecycle.vue'
-// import ComponentsRegister from './ComponentsRegister/ComponentsRegister.vue'
-// import MyComponent from './ComponentsRegister/MyComponent.vue'
-// import User from './components/User/User.vue'
+import Start from './Start/Start.vue'
+import Conditionals from './Conditionals/Conditionals.vue'
+import Game from './Game/Game.vue'
+import Lifecycle from './Lifecycle/Lifecycle.vue'
+import ComponentsRegister from './ComponentsRegister/ComponentsRegister.vue'
+import MyComponent from './ComponentsRegister/MyComponent.vue'
+import User from './components/User/User.vue'
 import Quote from './Quote/Quote.vue'
 
 export default {
+  data() {
+    return {
+      selectedComponent: 'appGame',
+    }
+  },
   components: {
-    // 'app-init': Start,
-    // Conditionals,
-    // 'app-lifecycle': Lifecycle,
-    // appGame: Game,
-    // 'app-components-register': ComponentsRegister,
-    // MyComponent,
-    // appUser: User,
+    'app-init': Start,
+    Conditionals,
+    'app-lifecycle': Lifecycle,
+    appGame: Game,
+    'app-components-register': ComponentsRegister,
+    MyComponent,
+    appUser: User,
     'app-quote': Quote,
   },
 }
