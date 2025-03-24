@@ -3,7 +3,15 @@
     <navbar></navbar>
     <div class="row">
       <div class="col-xs-2">
-        <router-view />
+        <!-- Without keep alive -->
+        <!-- <router-view /> -->
+
+        <!-- With keep alive -->
+        <keep-alive>
+          <router-view v-slot="{ Component }">
+            <component :is="Component" />
+          </router-view>
+        </keep-alive>
       </div>
     </div>
   </div>
