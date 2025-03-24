@@ -8,7 +8,11 @@
     <my-component></my-component> -->
     <div class="row">
       <div class="col-xs-2">
-        <app-user></app-user>
+        <!-- <app-user></app-user> -->
+        <app-quote>
+          <h1>The quote</h1>
+          <p>A wonderful quote!</p>
+        </app-quote>
       </div>
     </div>
   </div>
@@ -21,7 +25,8 @@
 // import Lifecycle from './Lifecycle/Lifecycle.vue'
 // import ComponentsRegister from './ComponentsRegister/ComponentsRegister.vue'
 // import MyComponent from './ComponentsRegister/MyComponent.vue'
-import User from './components/User/User.vue'
+// import User from './components/User/User.vue'
+import Quote from './Quote/Quote.vue'
 
 export default {
   components: {
@@ -31,14 +36,10 @@ export default {
     // appGame: Game,
     // 'app-components-register': ComponentsRegister,
     // MyComponent,
-    appUser: User,
+    // appUser: User,
+    'app-quote': Quote,
   },
 }
 </script>
 
-<style>
-div.component {
-  border: 1px solid black;
-  padding: 30px;
-}
-</style>
+<style></style>
