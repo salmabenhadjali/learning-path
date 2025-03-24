@@ -5,6 +5,7 @@
     <hr />
     <button @click="changeName">Change name</button>
     <p>My name is {{ name }}</p>
+    <p>My age is {{ age }}</p>
     <div class="row">
       <div class="col-xs-12 col-sm-6">
         <app-user-detail
