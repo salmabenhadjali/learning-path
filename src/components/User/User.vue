@@ -4,19 +4,18 @@
     <p>I'm an awesome User!</p>
     <hr />
     <button @click="changeName">Change name</button>
-    <p>My name is {{ name }}</p>
-    <p>My age is {{ age }}</p>
+    <p>My name is {{ user.name }}</p>
+    <p>My age is {{ user.age }}</p>
     <div class="row">
       <div class="col-xs-12 col-sm-6">
         <app-user-detail
-          :userName="name"
-          @resetUserName="name = $event"
+          :user="user"
+          @resetUserName="setName($event)"
           :resetFn="resetName"
-          :userAge="age"
         ></app-user-detail>
       </div>
       <div class="col-xs-12 col-sm-6">
-        <app-user-edit :userAge="age" :changeAge="changeAge"></app-user-edit>
+        <app-user-edit :user="user" :changeAge="changeAge"></app-user-edit>
       </div>
     </div>
   </div>
@@ -29,19 +28,24 @@ import UserEdit from './UserEdit.vue'
 export default {
   data() {
     return {
-      name: 'Salma',
-      age: 27,
+      user: {
+        name: 'Salma',
+        age: 27,
+      },
     }
   },
   methods: {
     changeName() {
-      this.name = 'Bastien'
+      this.$store.commit('setName', 'Bastien')
     },
     resetName() {
-      this.name = 'Max1'
+      this.$store.commit('setName', 'Max1')
     },
     changeAge() {
-      this.age = 30
+      this.$store.commit('setAge', 30)
+    },
+    setName(name) {
+      this.$store.commit('setName', name)
     },
   },
   components: {

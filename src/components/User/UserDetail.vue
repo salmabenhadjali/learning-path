@@ -3,7 +3,7 @@
     <h3>You may view the User Details here</h3>
     <p>Many Details</p>
     <p>User Name: {{ switchName() }}</p>
-    <p>User age: {{ userAge }}</p>
+    <p>User age: {{ user?.age }}</p>
     <button @click="resetName">Reset Name</button>
     <button @click="resetFn">Reset Name from parent</button>
   </div>
@@ -13,27 +13,24 @@
 import { eventBus } from '../../main'
 export default {
   props: {
-    userName: {
-      type: String,
-      required: true,
-      default: 'Max ',
-    },
     resetFn: Function,
     userAge: Number,
   },
-  methods: {
-    switchName() {
-      return this.userName.split('').reverse().join('')
-    },
-    resetName() {
-      this.userName = 'Max'
-      this.$emit('resetUserName', this.userName)
+
+  computed: {
+    user() {
+      this.$store.getters.user || {}
     },
   },
-  created() {
-    eventBus.$on('changeUserAge', age => {
-      this.userAge = age
-    })
+
+  methods: {
+    switchName() {
+      return this.$store.state.user.name.split('').reverse().join('')
+    },
+    resetName() {
+      this.$store.state.user.name = 'Max'
+      this.$store.dispatch('updateName', 'Max')
+    },
   },
 }
 </script>
