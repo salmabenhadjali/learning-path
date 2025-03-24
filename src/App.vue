@@ -10,8 +10,11 @@
       <div class="col-xs-2">
         <!-- <app-user></app-user> -->
         <app-quote>
-          <h1>The quote</h1>
-          <p>A wonderful quote!</p>
+          <!-- named slot -->
+          <h1 slot="title">The quote</h1>
+          <p slot="content">A wonderful quote!</p>
+          <!-- unnamed slot -->
+          <p>Unnamed slot!</p>
         </app-quote>
       </div>
     </div>
