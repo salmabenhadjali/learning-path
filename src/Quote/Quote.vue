@@ -1,6 +1,20 @@
 <template>
   <div>
-    <button @click="addQuote">Add Quote</button>
+    <form @submit.prevent="addQuote">
+      <input
+        type="text"
+        v-model="newQuote.title"
+        placeholder="Quote title"
+        required
+      />
+      <input
+        type="text"
+        v-model="newQuote.body"
+        placeholder="Quote body"
+        required
+      />
+      <button type="submit">Add Quote</button>
+    </form>
     <div class="title" v-for="quote in quotes" :key="quote.id">
       <h1>{{ quote.title }}</h1>
       <p>{{ quote.body }}</p>

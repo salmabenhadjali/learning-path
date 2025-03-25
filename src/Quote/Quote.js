@@ -25,14 +25,19 @@ export default {
   methods: {
     async addQuote() {
       const newQuote = {
-        title: 'new quote',
-        body: 'description new quote',
+        title: this.newQuote.title,
+        body: this.newQuote.body,
         userId: 1,
       }
+      this.quotes.unshift({ ...this.newQuote })
       await axios
         .post('https://jsonplaceholder.typicode.com/posts', newQuote)
         .then(response => response.data)
-        .then(data => console.log(data))
+        .then(data => {
+          console.log(data)
+          this.newQuote.title = ''
+          this.newQuote.body = ''
+        })
         .catch(error => {
           console.error('an error creating quote: ', error)
         })
