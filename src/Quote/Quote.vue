@@ -1,16 +1,9 @@
 <template>
   <div>
-    <div class="title">
-      <slot name="title"></slot>
-      <span><slot name="subtitle">Subtitle slot</slot></span>
-    </div>
-    <hr />
-    <div>
-      <slot name="content"></slot>
-    </div>
-    <hr />
-    <div>
-      <slot></slot>
+    <button @click="addQuote">Add Quote</button>
+    <div class="title" v-for="quote in quotes" :key="quote.id">
+      <h1>{{ quote.title }}</h1>
+      <p>{{ quote.body }}</p>
     </div>
   </div>
 </template>

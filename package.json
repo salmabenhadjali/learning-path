@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@vitejs/plugin-vue2": "^2.3.3",
+    "axios": "^1.8.4",
     "vite": "^4.0.0",
     "vite-plugin-vue2": "^2.0.3",
     "vue": "^2.7.16",
