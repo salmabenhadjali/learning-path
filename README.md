@@ -10,10 +10,10 @@ From conquering TypeScript dragons 🐉, befriending the elusive React hooks �
 
 ## 🧭 What You'll Find Here
 
-* **Projects**: Mini-apps, experiments, and snippets that mark my progress.
-* **Challenges**: Code challenges, problem-solving exercises, and other brain teasers 🧩.
-* **Notes & Resources**: Handy guides, cheatsheets, and any helpful nuggets I pick up along the way. They’re like breadcrumbs on this adventure trail.
-* **Experiments**: This is where things get weird. Expect trial and error, weird code structures, and moments of "Did that really work?"
+- **Projects**: Mini-apps, experiments, and snippets that mark my progress.
+- **Challenges**: Code challenges, problem-solving exercises, and other brain teasers 🧩.
+- **Notes & Resources**: Handy guides, cheatsheets, and any helpful nuggets I pick up along the way. They’re like breadcrumbs on this adventure trail.
+- **Experiments**: This is where things get weird. Expect trial and error, weird code structures, and moments of "Did that really work?"
 
 ## 🌿 Branches as Adventures
 
@@ -23,10 +23,25 @@ To switch topics, just checkout a different branch and explore along with me.
 
 ## 🎢 The Adventure So Far
 
-* Chapter 1: "The Beginnings" – Getting familiar with the tools and languages. Hello world? More like hello universe! 🌌
-* Chapter 2: "Bugs & Debugs" – Learning from each bug, and savoring every successful compile.
-* Chapter 3: "Framework Frenzy" – Exploring new frameworks and understanding how each one builds on the last.
-* Chapter 4 and beyond... Stay tuned. 🚀
+- Chapter 1: "The Beginnings" – Getting familiar with the tools and languages. Hello world? More like hello universe! 🌌
+- Chapter 2: "Bugs & Debugs" – Learning from each bug, and savoring every successful compile.
+- Chapter 3: "Framework Frenzy" – Exploring new frameworks and understanding how each one builds on the last.
+- Chapter 4 and beyond... Stay tuned. 🚀
+
+## 🌟 What I Relearned
+
+These are the foundational Vue topics I revisited to refresh and solidify my understanding:
+
+- 🌱 Using VueJS to Interact with the DOM
+- 🔄 Using Conditionals and Rendering Lists
+- 📆 Understanding the VueJS Instance
+- 🚦 Communicating between Components
+- 🧪 Handling User Input with Forms
+- 🌍 Connecting to Servers via Http - Using axios
+- 🧼 Vuex: State management with actions, mutations, modules, and Composition API usage
+- 🔹 Vue Router: Dynamic routes, nested routes, and `<keep-alive>` for component caching
+- 🛋️ ES Modules: What they are and how they're used in Vue & JS
+- 💅 Prettier vs ESLint: Formatting vs linting explained
 
 ## 🤓 Follow Along
 
@@ -34,7 +49,7 @@ If you're into learning, laughing, and maybe a bit of coding chaos, then follow 
 
 Thanks for stopping by – let's make coding fun, one bug at a time!
 
---- 
+---
 
 **Salma**  
-*Your friendly neighborhood code explorer 🧑‍💻*
+_Your friendly neighborhood code explorer 🧑‍💻_
